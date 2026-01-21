@@ -2,4 +2,6 @@
 SLC app
 ## Team members
 1.- Pablo Lopez
-2.- Mike Dugas2.- Gaurav
+2.- Mike Dugas
+3.- Kamalpreet Singh
+4.- Gaurav
