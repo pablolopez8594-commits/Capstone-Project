@@ -6,3 +6,5 @@ SLC app
 3.- Kamalpreet Singh
 4.- Ignacio Flores
 5.- Jaskirat
+6.- Gaurav
+
