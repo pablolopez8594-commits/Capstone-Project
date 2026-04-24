@@ -1,0 +1,334 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4pc;
+}
+
+
+
+.header {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #ff4d4d;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4pc;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #000;   /* mejor negro si tu avatar tiene fondo oscuro */
+    overflow: hidden;
+    margin: 0 auto 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   /* muestra todo el avatar */
+    object-position: center;
+    display: block;
+}
+.student-box {
+    background-color: #f2f2f2;
+    padding: 14px;
+    width: 260px;
+    border-radius: 8px;
+    margin: 6px 0 16px 0;
+    font-weight: 500;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.label {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.container {
+    flex: 1 0 auto; 
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar, .footer {
+    width: 100%;
+    flex-shrink: 0; 
+}
+
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: #0055a5;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #003366;
+}
+
+.footer {
+    background-color:red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2pc;
+    
+}
+
+
+
+
+
+
+.search-container {
+    margin: 30px auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+
+.search-input {
+    padding: 12px;
+    width: 65%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #0055a5;
+}
+
+
+.search-btn {
+    padding: 12px 25px;
+    background-color: #0055a5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #003366;
+}
+
+
+.clear-link {
+    display: inline-block;
+    margin-left: 15px;
+    color: #cc0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.clear-link:hover {
+    text-decoration: underline;
+}
+
+
+.directory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed; 
+}
+
+
+.directory-table th, 
+.directory-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle; 
+}
+
+
+.directory-table th {
+    background-color: #0055a5;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.directory-table td {
+    color: #333;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+/* Column 1: Name */
+.directory-table th:nth-child(1),
+.directory-table td:nth-child(1) {
+    text-align: left;
+    width: 20%;
+    padding-left: 15px;
+}
+
+/* Column 2: Program */
+.directory-table th:nth-child(2),
+.directory-table td:nth-child(2) {
+    text-align: left;
+    width: 20%;
+    font-weight: 500;
+}
+
+
+
+
+/* Column 3: Email */
+.directory-table th:nth-child(3),
+.directory-table td:nth-child(3) {
+    text-align: left;
+    width: 25%;
+}
+
+/* Column 4: Office */
+.directory-table th:nth-child(4),
+.directory-table td:nth-child(4) {
+    text-align: center;
+    width: 10%;
+}
+
+/* Column 5: Availability */
+.directory-table th:nth-child(5),
+.directory-table td:nth-child(5) {
+    text-align: center;
+    width: 25%;
+}
+
+
+
+
+
+
+.directory-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.directory-table tr:hover {
+    background-color: #e6f7ff;
+}
+
+
+.directory-table a {
+    color: #0055a5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.directory-table a:hover {
+    text-decoration: underline;
+}
+
+/* MAP */
+
+.map-wrap,
+#map-container {
+  width: 100%;
+  min-height: 400px;
+}
+
+@media (max-width: 991.98px) {
+  .map-wrap,
+  #map-container {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .map-wrap,
+  #map-container {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .map-wrap,
+  #map-container {
+    min-height: 200px;
+  }
+}
+
+#map-container img,
+#map-container svg,
+#map-container canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.form-label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.map-ui .form-control,
+.card .form-control {
+  height: 48px;
+}
+
+.card .btn {
+  height: 48px;
+}
